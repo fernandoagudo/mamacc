@@ -1,0 +1,11 @@
+Sitemap: https://mamacc.local/wp-sitemap.xml
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+# ---------------------------
+# END YOAST BLOCK
+Sitemap: https://mamacc.local/sitemap.xml
+Sitemap: https://mamacc.local/sitemap.html

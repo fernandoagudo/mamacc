@@ -1,0 +1,2078 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/**
+* Estilos para las Tablas del Productero
+*/
+.tabla_productero {
+    margin-bottom: 20px;
+    background: #fff;
+    /*display: table;*/
+    border-collapse: collapse;
+}
+
+.tabla_productero a {
+    text-decoration: none !important;
+}
+
+.tabla_productero_sombra {
+    box-shadow: 0px 0px 52px -23px rgba(79, 79, 79, 1);
+}
+
+.tabla_productero_sin_sombra {
+    overflow: hidden;
+    box-shadow: 0px 0px 52px -23px rgba(79, 79, 79, 1);
+}
+
+.tabla_productero .dashicons-arrow-right {
+    color: #ee9105;
+}
+
+/*ESTILO TABLA 1*/
+.tabla_productero .estilo_tabla_1 {
+    border-left: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    float: left;
+    border-radius: 3px;
+    position: relative;
+    box-sizing: border-box;
+    display: table-cell;
+}
+
+.tabla_productero .estilo_tabla_1:last-child {
+    border-right: 1px solid #dbdbdb;
+}
+
+.tabla_productero .estilo_tabla_1:empty {
+    display: none;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_imagen {
+    display: block;
+    height: 180px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.tabla_productero .estilo_tabla_1.productero_amazon_sin_api .productero_amazon_imagen img {
+    width: auto;
+}
+
+/*.tabla_productero .estilo_tabla_1 .productero_amazon_imagen:hover {
+    transition: all 0.5s;
+    transform: scale(1.02);
+}*/
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_imagen a {
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_imagen a img {
+    max-height: 160px;
+    width: auto;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_comprar_boton {
+    padding: 10px;
+    text-align: center;
+}
+
+/*.tabla_productero .estilo_tabla_1 .productero_comprar_boton:hover {
+    transition: all 0.5s;
+    transform: scale(1.02);
+}*/
+
+.tabla_productero .productero_comprar_boton a {
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 8px 30px;
+    display: block;
+}
+
+.tabla_productero .productero_comprar_boton a:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /*transition: all 0.5s;*/
+    transform: scale(1.02);
+}
+
+.tabla_productero .estilo_tabla_1 .estilo_boton_2.productero_comprar_boton a {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px 0 10px 0 !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+.tabla_productero .estilo_tabla_1 .estilo_boton_3.productero_comprar_boton a {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    padding: 20px !important;
+}
+
+º
+
+.tabla_productero .estilo_tabla_1 .estilo_boton_2.productero_comprar_boton a:hover, .tabla_productero .estilo_tabla_1 .estilo_boton_3.productero_comprar_boton a:hover {
+    /*opacity: 0.8;*/
+}
+
+.tabla_productero .estilo_tabla_1 .boton_productero_abajo {
+    bottom: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tabla_productero .estilo_tabla_1 .nombre-productero {
+    padding: 10px;
+    font-size: 13px;
+    margin-bottom: 10px !important;
+    text-align: center;
+    display: block;
+}
+
+
+.tabla_productero .estilo_tabla_1 .nombre-productero a {
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_caracteristicas {
+    text-align: center;
+    font-size: 14px;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_caracteristicas span.caracteristicas_texto {
+    font-weight: bold;
+    color: #ee9105;
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_amazon {
+    text-align: center;
+    height: 50px;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_amazon img {
+    width: 100px;
+    height: auto;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_opiniones {
+    font-size: 13px;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tabla_productero .estilo_tabla_1 .productero_amazon_opiniones a {
+    display: block;
+}
+
+
+.estilo_tabla_1:first-child:nth-last-child(1) {
+    width: 100% !important;
+}
+
+.estilo_tabla_1:first-child:nth-last-child(2),
+.estilo_tabla_1:first-child:nth-last-child(2) ~ .estilo_tabla_1 {
+    width: 50% !important;
+}
+
+.estilo_tabla_1:first-child:nth-last-child(3),
+.estilo_tabla_1:first-child:nth-last-child(3) ~ .estilo_tabla_1 {
+    width: 33.33% !important;
+}
+
+.estilo_tabla_1:first-child:nth-last-child(4),
+.estilo_tabla_1:first-child:nth-last-child(4) ~ .estilo_tabla_1 {
+    width: 25% !important;
+}
+
+.estilo_tabla_1:first-child:nth-last-child(5),
+.estilo_tabla_1:first-child:nth-last-child(5) ~ .estilo_tabla_1 {
+    width: 20% !important;
+}
+
+.estilo_tabla_1:first-child:nth-last-child(6),
+.estilo_tabla_1:first-child:nth-last-child(6) ~ .estilo_tabla_1 {
+    width: 16.66% !important;
+}
+
+@media screen and (max-width: 920px) {
+    .estilo_tabla_1:first-child:nth-last-child(5),
+    .estilo_tabla_1:first-child:nth-last-child(5) ~ .estilo_tabla_1 {
+        width: 50% !important;
+        margin-bottom: 10px;
+    }
+
+    .tabla_productero .estilo_tabla_1.productos_5:last-child {
+        /*display: none;*/
+    }
+
+    .estilo_tabla_1:first-child:nth-last-child(4),
+    .estilo_tabla_1:first-child:nth-last-child(4) ~ .estilo_tabla_1 {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    .estilo_tabla_1:first-child:nth-last-child(6), .estilo_tabla_1:first-child:nth-last-child(6) ~
+    .estilo_tabla_1, .estilo_tabla_1:first-child:nth-last-child(5), .estilo_tabla_1:first-child:nth-last-child(5) ~
+    .estilo_tabla_1, .estilo_tabla_1:first-child:nth-last-child(4), .estilo_tabla_1:first-child:nth-last-child(4) ~
+    .estilo_tabla_1, .estilo_tabla_1:first-child:nth-last-child(3), .estilo_tabla_1:first-child:nth-last-child(3) ~
+    .estilo_tabla_1, .estilo_tabla_1:first-child:nth-last-child(2), .estilo_tabla_1:first-child:nth-last-child(2) ~
+    .estilo_tabla_1, .estilo_tabla_1:first-child:nth-last-child(1) {
+        width: 100% !important;
+        margin: 0 0 10px 0;
+    }
+
+    .tabla_productero .estilo_tabla_1.productos_5:last-child {
+        display: block;
+    }
+
+    .tabla_productero .estilo_tabla_1 .productero_amazon_amazon img {
+        width: 20%;
+    }
+
+    .tabla_productero .estilo_tabla_1 .nombre-productero, .tabla_productero .estilo_tabla_1 .productero_amazon_caracteristicas {
+        height: auto;
+    }
+}
+
+/*ESTILO TABLA 2*/
+.tabla_productero .estilo_tabla_2 {
+    box-sizing: border-box;
+    display: table-row;
+}
+
+/*.tabla_productero .estilo_tabla_2:hover {
+    background: #eeeeee;
+    transition: all 0.5s;
+    transform: scale(1.02);
+}*/
+
+.tabla_productero .estilo_tabla_2 .productero_amazon_imagen {
+    width: 15%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tabla_productero .estilo_tabla_2 .productero_amazon_imagen a {
+    display: block;
+    text-align: center;
+}
+
+
+.tabla_productero .estilo_tabla_2 .productero_comprar_boton:last-child {
+    /*display: none;*/
+}
+
+
+.tabla_productero .estilo_tabla_2 .productero_comprar_boton {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    display: table-cell;
+    width: 15%;
+    vertical-align: middle;
+}
+
+/*.tabla_productero .estilo_tabla_2 .productero_comprar_boton a {
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 8px 30px;
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_2 .productero_comprar_boton a:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}*/
+
+.tabla_productero .estilo_tabla_2 .estilo_boton_2.productero_comprar_boton a {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 10px 0 10px 0 !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+.tabla_productero .estilo_tabla_2 .estilo_boton_3.productero_comprar_boton a {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    padding: 20px !important;
+}
+
+.tabla_productero .estilo_tabla_2 .estilo_boton_2.productero_comprar_boton a:hover, .tabla_productero .estilo_tabla_2 .estilo_boton_3.productero_comprar_boton a:hover {
+    opacity: 0.8;
+}
+
+.tabla_productero .estilo_tabla_2 .nombre-productero {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 5px !important;
+    text-align: center;
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tabla_productero .estilo_tabla_2 .nombre-producto {
+    width: 25%;
+}
+
+.tabla_productero .estilo_tabla_2 .nombre-productero_ventajas, .tabla_productero .estilo_tabla_2 .nombre-productero_desventajas, .tabla_productero .estilo_tabla_2 .caracteristicas-productero {
+    text-transform: capitalize;
+    width: 15%;
+    text-align: left;
+}
+
+.tabla_productero .estilo_tabla_2 .nombre-productero .dashicons {
+    margin-right: 3px;
+}
+
+.tabla_productero .estilo_tabla_2 .nombre-productero .dashicons-yes-alt {
+    color: #08a60a;
+}
+
+.tabla_productero .estilo_tabla_2 .nombre-productero .dashicons-dismiss {
+    color: #df1508;
+}
+
+@media screen and (max-width: 752px) {
+    .tabla_productero .estilo_tabla_2 {
+        display: block;
+        border: 1px solid #dbdbdb;
+    }
+
+    .tabla_productero .estilo_tabla_2 .productero_amazon_imagen, .tabla_productero .estilo_tabla_2 .productero_comprar_boton, .tabla_productero .estilo_tabla_2 .nombre-productero {
+        width: 100% !important;
+        margin: 0 0 10px 0;
+        display: block;
+        border: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .tabla_productero .estilo_tabla_2 .productero_comprar_boton:last-child {
+        display: block;
+    }
+
+    .productero_amazon_encabezado {
+        display: none !important;
+    }
+}
+
+/*ESTILO TABLA 3*/
+.tabla_productero .estilo_tabla_3 {
+    box-sizing: border-box;
+    display: table-row;
+    background: #fff;
+}
+
+/*.tabla_productero .estilo_tabla_3:hover {
+    transition: all 0.5s;
+    transform: scale(1.02);
+}*/
+
+.productero_amazon_encabezado {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.productero_amazon_encabezado * {
+    vertical-align: middle;
+    padding: 10px;
+    font-weight: bold !important;
+    font-size: 15px;
+}
+
+.tabla_productero .estilo_tabla_3:nth-child(3), .tabla_productero .estilo_tabla_3:nth-child(5) {
+    background: #ececec;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_table_row {
+    display: table-cell;
+    border-bottom: 1px solid #dbdbdb;
+    box-sizing: border-box;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_table_row:last-child {
+    padding-right: 10px;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_imagen {
+    min-width: 180px;
+    height: auto;
+    padding: 10px;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_imagen a {
+    display: block;
+    text-align: center;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_brand {
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_title {
+    padding: 10px;
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_title a {
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_price, .tabla_productero .estilo_tabla_3 .productero_amazon_prime {
+    width: 10%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_prime .prime_logo {
+    height: auto;
+    margin-left: -15px;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_price a, .tabla_productero .estilo_tabla_3 .productero_amazon_prime a {
+    display: block;
+    color: inherit;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_prime a img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_buy {
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_buy a {
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 8px 30px;
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_3 .productero_amazon_buy a:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .estilo_tabla_3 .estilo_boton_2.productero_amazon_buy a {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px 0 10px 0 !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+.tabla_productero .estilo_tabla_3 .estilo_boton_3.productero_amazon_buy a {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    padding: 20px !important;
+}
+
+.tabla_productero .estilo_tabla_3 .estilo_boton_2.productero_amazon_buy a:hover, .tabla_productero .estilo_tabla_3 .estilo_boton_3.productero_amazon_buy a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 752px) {
+    .tabla_productero .estilo_tabla_3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .tabla_productero .estilo_tabla_3 .productero_table_row {
+        width: 100% !important;
+        display: block;
+        border: 0;
+        padding: 10px;
+    }
+
+    .tabla_productero .estilo_tabla_3 .productero_amazon_imagen {
+        min-width: 100%;
+    }
+}
+
+/*ESTILO TABLA 4*/
+.tabla_productero .estilo_tabla_4 {
+    border-left: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tabla_productero:hover {
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
+}
+
+/*.tabla_productero .estilo_tabla_4:hover {
+    transition: all 0.5s;
+    transform: scale(1.02);
+}*/
+
+.tabla_productero .estilo_tabla_4:last-child {
+    border-right: 1px solid #dbdbdb;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_table_row {
+    padding: 9px;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_table_row:last-child {
+    padding-bottom: 30px;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_imagen {
+    width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_imagen a {
+    text-align: center;
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_imagen a img {
+    max-height: 160px;
+    width: auto;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_title {
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    background: #edebeb;
+}
+
+/*.tabla_productero .estilo_tabla_4 .productero_amazon_title:hover {
+    background: #f6f4f4;
+}*/
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_title a {
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_buy {
+    text-align: center;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_buy a {
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 8px 30px;
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_buy a:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .estilo_tabla_4 .estilo_boton_2.productero_amazon_buy a {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px 0 10px 0 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+.tabla_productero .estilo_tabla_4 .estilo_boton_3.productero_amazon_buy a {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    padding: 20px !important;
+}
+
+.tabla_productero .estilo_tabla_4 .estilo_boton_2.productero_amazon_buy a:hover, .tabla_productero .estilo_tabla_4 .estilo_boton_3.productero_amazon_buy a:hover {
+    opacity: 0.8;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_amazon {
+    text-align: center;
+    margin: 5px 0 5px 0;
+    height: 30px;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_amazon img {
+    width: 40%;
+    height: auto;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_opiniones {
+    font-size: 13px;
+    text-align: center;
+    background: #f6f6f6;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_brand {
+    font-size: 13px;
+    text-align: center;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_opiniones a {
+    display: block;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_pros, .tabla_productero .estilo_tabla_4 .productero_amazon_contras {
+    font-size: 13px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_pros {
+    background: rgba(209, 237, 209, 0.55);
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_contras {
+    background: rgba(232, 217, 210, 0.55);
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_pros span.pros_texto {
+    display: block;
+    color: #08a60a;
+    font-weight: bold;
+    text-transform: uppercase !important;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_pros .dashicons {
+    color: #08a60a !important;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_contras span.contras_texto {
+    display: block;
+    color: #df1508;
+    font-weight: bold;
+    text-transform: uppercase !important;
+}
+
+.tabla_productero .estilo_tabla_4 .productero_amazon_contras .dashicons {
+    color: #df1508 !important;
+}
+
+.tabla_productero .estilo_tabla_4.productero_amazon_sin_api .productero_amazon_imagen img {
+    width: auto;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(1) {
+    width: 100% !important;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(1) .productero_amazon_amazon img {
+    width: 9%;
+    height: auto;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(2) .productero_amazon_amazon img {
+    width: 17%;
+    height: auto;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(2) ~ .estilo_tabla_4 .productero_amazon_amazon img {
+    width: 17%;
+    height: auto;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(3) .productero_amazon_amazon img {
+    width: 25%;
+    height: auto;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(3) ~ .estilo_tabla_4 .productero_amazon_amazon img {
+    width: 25%;
+    height: auto;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(4) .productero_amazon_amazon img {
+    width: 30%;
+    height: auto;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(4) ~ .estilo_tabla_4 .productero_amazon_amazon img {
+    width: 30%;
+    height: auto;
+}
+
+
+.estilo_tabla_4:first-child:nth-last-child(2),
+.estilo_tabla_4:first-child:nth-last-child(2) ~ .estilo_tabla_4 {
+    width: 50% !important;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(3),
+.estilo_tabla_4:first-child:nth-last-child(3) ~ .estilo_tabla_4 {
+    width: 33.33% !important;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(4),
+.estilo_tabla_4:first-child:nth-last-child(4) ~ .estilo_tabla_4 {
+    width: 25% !important;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(5),
+.estilo_tabla_4:first-child:nth-last-child(5) ~ .estilo_tabla_4 {
+    width: 20% !important;
+}
+
+.estilo_tabla_4:first-child:nth-last-child(6),
+.estilo_tabla_4:first-child:nth-last-child(6) ~ .estilo_tabla_4 {
+    width: 16.66% !important;
+}
+
+@media screen and (max-width: 900px) {
+    .tabla_productero .estilo_tabla_4 {
+        display: block;
+        border: 1px solid #dbdbdb;
+        max-height: none;
+    }
+
+    .tabla_productero .estilo_tabla_4:hover {
+        transform: none;
+    }
+
+    .tabla_productero .estilo_tabla_4 .productero_amazon_imagen, .tabla_productero .estilo_tabla_4 .productero_amazon_title, .tabla_productero .estilo_tabla_4 .productero_amazon_pros, .tabla_productero .estilo_tabla_4 .productero_amazon_contras {
+        height: auto;
+    }
+
+    .tabla_productero .estilo_tabla_4 .productero_amazon_amazon img {
+        width: 20%;
+        height: auto;
+    }
+
+    .estilo_tabla_4:first-child:nth-last-child(6), .estilo_tabla_4:first-child:nth-last-child(6) ~
+    .estilo_tabla_4, .estilo_tabla_4:first-child:nth-last-child(5), .estilo_tabla_4:first-child:nth-last-child(5) ~
+    .estilo_tabla_4, .estilo_tabla_4:first-child:nth-last-child(4), .estilo_tabla_4:first-child:nth-last-child(4) ~
+    .estilo_tabla_4, .estilo_tabla_4:first-child:nth-last-child(3), .estilo_tabla_4:first-child:nth-last-child(3) ~
+    .estilo_tabla_4, .estilo_tabla_4:first-child:nth-last-child(2), .estilo_tabla_4:first-child:nth-last-child(2) ~
+    .estilo_tabla_4, .estilo_tabla_4:first-child:nth-last-child(1) {
+        width: 100% !important;
+        margin: 0 0 10px 0;
+    }
+
+    .tabla_productero .estilo_tabla_4.productos_6:last-child {
+        display: block;
+    }
+
+}
+
+
+/**
+* Estilos para la Tienda del Productero
+*/
+.tiendaproductero {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    display: table;
+}
+
+.tiendaproductero a {
+    text-decoration: none !important;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 .productero-single, .tiendaproductero.productero-tienda-estilo-3 .productero-single, .tiendaproductero.productero-tienda-estilo-1 .productero-single {
+    float: left;
+    margin: 0 0.4% 0 0.4%;
+    border-radius: 5px;
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 0.4%;
+    background: #fff;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 .productero-single {
+    margin-bottom: 10px;
+}
+
+.tiendaproductero.productero-tienda-estilo-2.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-6-grid .productero-single {
+    width: 15.86%;
+}
+
+.tiendaproductero.productero-tienda-estilo-2.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-5-grid .productero-single {
+    width: 19.2%;
+}
+
+.tiendaproductero.productero-tienda-estilo-2.productero-4-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-4-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-4-grid .productero-single {
+    width: 24.2%;
+}
+
+.tiendaproductero.productero-tienda-estilo-2.productero-3-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-3-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-3-grid .productero-single {
+    width: 32.53%;
+}
+
+.tiendaproductero.productero-tienda-estilo-2.productero-2-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-2-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-2-grid .productero-single {
+    width: 49.2%;
+}
+
+.tiendaproductero.productero-tienda-estilo-2.productero-1-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-1-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-1-grid .productero-single {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 .productero-single p, .tiendaproductero.productero-tienda-estilo-3 .productero-single p, .tiendaproductero.productero-tienda-estilo-3 .productero-single p, .tiendaproductero.productero-tienda-estilo-1 .productero-single p {
+    height: 65px !important;
+}
+
+@media screen and (max-width: 1330px) {
+    .tiendaproductero.productero-tienda-estilo-2.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-2.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-5-grid .productero-single {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .tiendaproductero.productero-tienda-estilo-2.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-2.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-2.productero-4-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-4-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-4-grid .productero-single {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    .tiendaproductero.productero-tienda-estilo-2.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-2.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-2.productero-4-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-4-grid .productero-single, .tiendaproductero.productero-tienda-estilo-2.productero-3-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-3-grid .productero-single, .tiendaproductero.productero-tienda-estilo-2.productero-2-grid .productero-single, .tiendaproductero.productero-tienda-estilo-3.productero-2-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-6-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-5-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-4-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-3-grid .productero-single, .tiendaproductero.productero-tienda-estilo-1.productero-2-grid .productero-single {
+        width: 95%;
+        max-width: 752px;
+        height: auto;
+    }
+}
+
+/*.tiendaproductero.productero-tienda-estilo-2 .productero-single:hover {
+    box-shadow: 0px 0px 0px 5px #222222;
+    transition: all 0.5s;
+}*/
+
+.tiendaproductero.productero-tienda-estilo-2 .amazon-imagen-correctivo, .tiendaproductero.productero-tienda-estilo-3 .amazon-imagen-correctivo, .tiendaproductero.productero-tienda-estilo-1 .amazon-imagen-correctivo {
+    width: 100%;
+    box-sizing: border-box;
+    height: 180px;
+    overflow: hidden;
+    display: block;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 .amazon-imagen-correctivo a, .tiendaproductero.productero-tienda-estilo-3 .amazon-imagen-correctivo a, .tiendaproductero.productero-tienda-estilo-1 .amazon-imagen-correctivo a {
+    text-align: center;
+    display: block;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 .amazon-imagen-correctivo img, .tiendaproductero.productero-tienda-estilo-3 .amazon-imagen-correctivo img, .tiendaproductero.productero-tienda-estilo-1 .amazon-imagen-correctivo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 p.nombre-productero, .tiendaproductero.productero-tienda-estilo-3 p.nombre-productero, .tiendaproductero.productero-tienda-estilo-1 p.nombre-productero {
+    font-size: 12px;
+    margin-bottom: 5px !important;
+    text-align: center;
+    clear: both;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 p.nombre-productero a, .tiendaproductero.productero-tienda-estilo-3 p.nombre-productero a {
+    color: #5d5f5d !important;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 a.amazon-seccion-comprar {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 1%;
+    margin: 10px 1%;
+    width: 46%;
+    float: left;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 12px;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 a.amazon-seccion-comprar img {
+    width: 80%;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 a.comprar-boton-compartido {
+    background: #0070ee;
+    border-radius: 5px 0px 5px 0px;
+    color: #fff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 1%;
+    margin: 10px 0%;
+    width: 48%;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+
+.tiendaproductero.productero-tienda-estilo-2 a.comprar-boton-compartido:hover {
+    opacity: 0.8;
+}
+
+
+.tiendaproductero.productero-tienda-estilo-3 .productero-single, .tiendaproductero.productero-tienda-estilo-1 .productero-single {
+    border: 1px solid #dbdbdb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.tiendaproductero.productero-tienda-estilo-3 .productero-single:hover, .tiendaproductero.productero-tienda-estilo-1 .productero-single:hover {
+    box-shadow: 0px 0px 20px -10px rgba(79, 79, 79, 1);
+    /*transform: scale(1.02);
+    transition: all 0.5s;*/
+}
+
+.tiendaproductero.productero-tienda-estilo-3 .amazon-imagen-correctivo {
+    padding: 5px;
+    box-sizing: border-box;
+    height: 180px;
+}
+
+.tiendaproductero.productero-tienda-estilo-3 .precios-tienda-3 {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tiendaproductero.productero-tienda-estilo-3 .precios-tienda-3 .precio-compartido {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #e2e2e2) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    border-radius: 3px 0 0 3px;
+    color: #000;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 10px -5px rgba(79, 79, 79, 1);
+    box-sizing: border-box;
+}
+
+.tiendaproductero.productero-tienda-estilo-3 .precios-tienda-3 .precio-compartido:hover {
+    background: linear-gradient(to bottom, #e2e2e2, #ffffff) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tiendaproductero.productero-tienda-estilo-3 .precios-tienda-3 .comprar-boton-compartido {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(to bottom, #000000, #4d4d4d) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px -5px rgba(79, 79, 79, 1);
+    box-sizing: border-box;
+}
+
+.tiendaproductero.productero-tienda-estilo-3 .precios-tienda-3 .comprar-boton-compartido:hover {
+    background: linear-gradient(to bottom, #4d4d4d, #000000) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+/*ESTILOS DE LA TIENDA 1*/
+.tiendaproductero.productero-tienda-estilo-1 .descuento-productero {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 26px;
+    margin-bottom: 5px;
+}
+
+.tiendaproductero.productero-tienda-estilo-1 .descuento-productero a {
+    display: block;
+    color: #fff;
+    background: #53cb6d;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.tiendaproductero.productero-tienda-estilo-1 .comprar-boton-amazon {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tiendaproductero.productero-tienda-estilo-1 .comprar-boton-amazon a {
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 5px;
+    display: block;
+}
+
+.tiendaproductero.productero-tienda-estilo-1 .comprar-boton-amazon a:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+/*TIENDA ESTILO 4*/
+.tiendaproductero.productero-tienda-estilo-4 {
+    width: 98%;
+    margin: auto;
+    padding: 2%;
+    padding-top: 20px;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    box-shadow: 0px 0px 20px -7px rgba(79, 79, 79, .5);
+    overflow: hidden;
+    background: #fff;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single:hover {
+    box-shadow: 0px 0px 20px 0 rgba(79, 79, 79, .5);
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-header {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-header .productero-header-izquierda {
+    float: left;
+    width: 70%;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-header .productero-header-izquierda p.nombre-productero {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-header .productero-header-derecha {
+    float: right;
+    width: 30%;
+    text-align: center;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-header .productero-header-derecha img {
+    width: 100%;
+    height: auto;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .caracteristicas-productero {
+    font-size: .9em;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .caracteristicas-productero p {
+    margin-bottom: 5px !important;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .caracteristicas-productero p .dashicons {
+    color: #f49c06;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .footer-productero {
+    overflow: hidden;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .footer-productero p.precio-productero {
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .footer-productero p.precio-productero a {
+    color: #000;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .footer-productero a.productero-comprar-boton {
+    float: right;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-comprar-boton {
+    text-align: center;
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-comprar-boton:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 752px) {
+    .tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-header .productero-header-izquierda {
+        width: 100%;
+    }
+
+    .tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-header .productero-header-derecha {
+        width: 100%;
+    }
+
+    .tiendaproductero.productero-tienda-estilo-4 .productero-single .productero-comprar-boton {
+        display: block;
+        width: 100%;
+    }
+
+    .tiendaproductero.productero-tienda-estilo-4 .productero-single .footer-productero p.precio-productero {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*TIENDA ESTILO 5*/
+.tiendaproductero.productero-tienda-estilo-5 {
+    width: 98%;
+    margin: auto;
+    padding: 2%;
+    padding-top: 20px;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 20px -7px rgba(79, 79, 79, .5);
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single:hover {
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single .imagen-productero {
+    float: left;
+    width: 10%;
+    margin-right: 3%;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single .imagen-productero a {
+    display: block;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single .imagen-productero a img {
+    width: 100%;
+    height: 100%;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single .productero-derecha {
+    float: left;
+    width: 87%;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single .productero-derecha .nombre-productero {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single .productero-comprar-boton {
+    text-align: center;
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.tiendaproductero.productero-tienda-estilo-5 .productero-single .productero-comprar-boton:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+}
+
+
+.tiendaproductero .productero-single .estilo-boton-1 {
+    text-align: center;
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.tiendaproductero .productero-single .estilo-boton-1:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+}
+
+.tiendaproductero .productero-single .estilo-boton-2 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px 0 10px 0 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.tiendaproductero .productero-single .estilo-boton-2:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.tiendaproductero .productero-single .estilo-boton-3 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.tiendaproductero .productero-single .estilo-boton-3:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.tiendaproductero .productero-single .estilo-boton-4 {
+    background: #000000;
+    color: #fff;
+    border-radius: 0 10px 0 10px !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.tiendaproductero .productero-single .estilo-boton-4:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+
+@media screen and (max-width: 752px) {
+    .tiendaproductero.productero-tienda-estilo-5 .productero-single .imagen-productero {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tiendaproductero.productero-tienda-estilo-5 .productero-single .productero-derecha {
+        width: 100%;
+    }
+
+    .tiendaproductero.productero-tienda-estilo-5 .productero-single .productero-comprar-boton {
+        display: block;
+        width: 100%;
+    }
+}
+
+/*
+* ESTILOS PARA EL PRODUCTERO CAJA
+*/
+.cajaproductero {
+    box-sizing: border-box;
+}
+
+.cajaproductero a {
+    text-decoration: none !important;
+}
+
+/* ESTILO 1 */
+.cajaproductero.productero-caja-estilo-1 {
+    width: 75%;
+    margin: auto;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    box-shadow: 0px 0px 20px -7px rgba(79, 79, 79, .5);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.cajaproductero.productero-caja-estilo-1:hover {
+    box-shadow: 0px 0px 20px 0 rgba(79, 79, 79, .5);
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+.cajaproductero.productero-caja-estilo-1 .amazon-imagen-correctivo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cajaproductero.productero-caja-estilo-1 .amazon-imagen-correctivo a {
+    display: block;
+}
+
+.cajaproductero.productero-caja-estilo-1 .nombre-productero {
+    text-align: center;
+    margin-bottom: 15px !important;
+    font-weight: bold;
+    color: inherit;
+}
+
+.cajaproductero.productero-caja-estilo-1 .nombre-productero a {
+    background: 0 !important;
+}
+
+.cajaproductero.productero-caja-estilo-1 .productero-comprar-boton {
+    width: 100%;
+    text-align: center;
+    display: block;
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.cajaproductero.productero-caja-estilo-1 .productero-comprar-boton:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.cajaproductero.productero-caja-estilo-1 .descuento-productero {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cajaproductero.productero-caja-estilo-1 .descuento-productero a {
+    display: block;
+    color: #fff;
+    background: #53cb6d;
+    border-radius: 3px;
+}
+
+.cajaproductero.productero-caja-estilo-1 .descuento-productero-texto {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 0.7em;
+}
+
+.cajaproductero.productero-caja-estilo-1 .descuento-productero-texto a {
+    display: block;
+    color: #53cb6d;
+    background: 0 !important;
+}
+
+.cajaproductero.productero-caja-estilo-1 .descuento-productero-texto a:hover {
+    color: #3ea254;
+}
+
+@media screen and (max-width: 752px) {
+    .cajaproductero.productero-caja-estilo-1 {
+        width: 95%;
+    }
+}
+
+/* ESTILO 2 */
+.cajaproductero.productero-caja-estilo-2 {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.cajaproductero.productero-caja-estilo-2:hover {
+    box-shadow: 0px 0px 10px 0 rgba(79, 79, 79, .4);
+    transform: scale(1.02);
+    transition: all .5s
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda {
+    float: left;
+    width: 70%;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda p.nombre-productero {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px !important;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda p.nombre-productero a, .cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda p.precio-productero a {
+    background: 0 !important;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda p.precio-productero {
+    margin-bottom: 10px !important;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda p.precio-productero:hover {
+    opacity: .7;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda p.precio-productero .trimprecio {
+    text-decoration: line-through;
+    color: #e21717;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda p.precio-productero a {
+    color: #53cb6d;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda .caracteristicas-productero {
+    font-size: .9em;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda .caracteristicas-productero p {
+    margin-bottom: 5px !important;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda .caracteristicas-productero p .dashicons {
+    color: #f49c06;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-derecha {
+    float: right;
+    width: 30%;
+    text-align: center;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-derecha a {
+    display: block;
+    text-align: center;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-derecha a img {
+    width: 80%;
+    height: auto;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-comprar-boton.estilo-boton-1 {
+    text-align: center;
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-comprar-boton.estilo-boton-1:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(5px);
+    transition: all 0.2s;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-comprar-boton.estilo-boton-2 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px 0 10px 0 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-comprar-boton.estilo-boton-2:hover {
+    opacity: 0.8;
+    transform: translateY(5px);
+    transition: all 0.2s;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-comprar-boton.estilo-boton-3 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.cajaproductero.productero-caja-estilo-2 .productero-comprar-boton.estilo-boton-3:hover {
+    opacity: 0.8;
+    transform: translateY(5px);
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 752px) {
+    .cajaproductero.productero-caja-estilo-2 {
+        width: 95%;
+    }
+
+    .cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-izquierda {
+        width: 100%;
+    }
+
+    .cajaproductero.productero-caja-estilo-2 .productero-header .productero-header-derecha {
+        width: 100%;
+    }
+
+    .cajaproductero.productero-caja-estilo-2 .productero-comprar-boton.estilo-boton-3 {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* ESTILO 3 */
+.cajaproductero.productero-caja-estilo-3 {
+    width: 75%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px -7px rgba(79, 79, 79, .5);
+    background: #fff;
+}
+
+.cajaproductero.productero-caja-estilo-3:hover {
+    box-shadow: 0px 0px 20px 0 rgba(79, 79, 79, .5);
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-header {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-header .productero-header-izquierda {
+    float: left;
+    width: 70%;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-header .productero-header-izquierda p.nombre-productero {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-header .productero-header-izquierda p.nombre-productero a {
+    background: 0 !important;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-header .productero-header-derecha {
+    float: right;
+    width: 30%;
+    text-align: center;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-header .productero-header-derecha img {
+    width: 100%;
+    height: auto;
+}
+
+.cajaproductero.productero-caja-estilo-3 .caracteristicas-productero {
+    font-size: .9em;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.cajaproductero.productero-caja-estilo-3 .caracteristicas-productero p {
+    margin-bottom: 5px !important;
+}
+
+.cajaproductero.productero-caja-estilo-3 .caracteristicas-productero p .dashicons {
+    color: #f49c06;
+}
+
+.cajaproductero.productero-caja-estilo-3 .footer-productero {
+    overflow: hidden;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.cajaproductero.productero-caja-estilo-3 .footer-productero p.precio-productero {
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.cajaproductero.productero-caja-estilo-3 .footer-productero p.precio-productero a {
+    color: #000;
+    background: 0 !important;
+}
+
+.cajaproductero.productero-caja-estilo-3 .footer-productero a.productero-comprar-boton {
+    float: right;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-1 {
+    text-align: center;
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-1:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-2 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px 0 10px 0 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-2:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-3 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-3:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 752px) {
+    .cajaproductero.productero-caja-estilo-3 {
+        width: 95%;
+    }
+
+    .cajaproductero.productero-caja-estilo-3 .productero-header .productero-header-izquierda {
+        width: 100%;
+    }
+
+    .cajaproductero.productero-caja-estilo-3 .productero-header .productero-header-derecha {
+        width: 100%;
+    }
+
+    .cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-3, .cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-2, .cajaproductero.productero-caja-estilo-3 .productero-comprar-boton.estilo-boton-1 {
+        display: block;
+        width: 100%;
+    }
+
+    .cajaproductero.productero-caja-estilo-3 .footer-productero p.precio-productero {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*ESTILO CAJA 4*/
+.cajaproductero.productero-caja-estilo-4 {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 20px -7px rgba(79, 79, 79, .5);
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.cajaproductero.productero-caja-estilo-4:hover {
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+.cajaproductero.productero-caja-estilo-4 .imagen-productero {
+    float: left;
+    width: 10%;
+    margin-right: 3%;
+}
+
+.cajaproductero.productero-caja-estilo-4 .imagen-productero a {
+    display: block;
+}
+
+.cajaproductero.productero-caja-estilo-4 .imagen-productero a img {
+    width: 100%;
+    height: 100%;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-derecha {
+    float: left;
+    width: 87%;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-derecha .nombre-productero {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-derecha .nombre-productero a {
+    background: 0 !important;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-1 {
+    text-align: center;
+    border: 1px solid #786025;
+    border-radius: 3px;
+    background: #eeb933;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #111;
+    padding: 5px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-1:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-2 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px 0 10px 0 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-2:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-3 {
+    background: #000000;
+    color: #fff;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-3:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 752px) {
+    .cajaproductero.productero-caja-estilo-4 .imagen-productero {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cajaproductero.productero-caja-estilo-4 .productero-derecha {
+        width: 100%;
+    }
+
+    .cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-1, .cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-2, .cajaproductero.productero-caja-estilo-4 .productero-comprar-boton.estilo-boton-3 {
+        display: block;
+        width: 100%;
+    }
+}
+
+/*PARA LAS IMÁGENES*/
+.productero-imagen.alignleft {
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.productero-imagen.alignright {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.rapcentroimg {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.unavailable {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #B12704;
+    margin-bottom: 0px;
+}
+
+/* Cabeceras con títulos personalizados para las tablas horizontales */
+.box {
+    position: relative;
+}
+
+.ribbon, .ribbon_mini {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+
+.ribbon span {
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    line-height: 28px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 205px;
+    display: block;
+    background: #79A70A;
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 48px;
+    left: -40px;
+}
+
+.ribbon span::before, .ribbon_mini span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #000000;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #000000;
+}
+
+.ribbon span::after, .ribbon_mini span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #000000;
+}
+
+.ribbon_mini span {
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    line-height: 28px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 155px;
+    display: block;
+    background: #79A70A;
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 31px;
+    left: -33px;
+}
+
+
+
+/* Fin cabeceras con títulos personalizados para las tablas horizontales */
+
+/* Cabeceras con títulos personalizados para las tablas verticales */
+.tabla_productero .featured_products_style_vertical {
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    background-color: #256aaf;
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: -1px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+/* Fin cabeceras con títulos personalizados para las tablas */
+
+
+/*Botones especiales tipo productero_amazon_buy*/
+
+.tabla_productero .estilo_boton_4.productero_amazon_buy a {
+    background: linear-gradient(to bottom, #4b830d, #7cb342) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+.tabla_productero .estilo_boton_4.productero_amazon_buy a:hover {
+    background: linear-gradient(to bottom, #4b830d, #7cb342) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .estilo_boton_5.productero_amazon_buy a {
+    background: linear-gradient(to bottom, #005cb2, #1e88e5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.tabla_productero .estilo_boton_5.productero_amazon_buy a:hover {
+    background: linear-gradient(to bottom, #005cb2, #1e88e5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .estilo_boton_6.productero_amazon_buy a {
+    background: linear-gradient(to bottom, #d50000, #ff5131) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.tabla_productero .estilo_boton_6.productero_amazon_buy a:hover {
+    background: linear-gradient(to bottom, #d50000, #ff5131) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .productero_amazon_buy:hover {
+    transform: scale(1.02);
+}
+
+/*Fin botones especiales tipo productero_amazon_buy*/
+
+
+/*Botones especiales tipo productero_comprar_boton*/
+
+.tabla_productero .estilo_boton_4.productero_comprar_boton a {
+    background: linear-gradient(to bottom, #4b830d, #7cb342) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+.tabla_productero .estilo_boton_4.productero_comprar_boton a:hover {
+    background: linear-gradient(to bottom, #4b830d, #7cb342) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .estilo_boton_5.productero_comprar_boton a {
+    background: linear-gradient(to bottom, #005cb2, #1e88e5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.tabla_productero .estilo_boton_5.productero_comprar_boton a:hover {
+    background: linear-gradient(to bottom, #005cb2, #1e88e5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .estilo_boton_6.productero_comprar_boton a {
+    background: linear-gradient(to bottom, #d50000, #ff5131) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.tabla_productero .estilo_boton_6.productero_comprar_boton a:hover {
+    background: linear-gradient(to bottom, #d50000, #ff5131) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.tabla_productero .productero_comprar_boton:hover {
+    transform: scale(1.02);
+}
+
+/*Fin botones especiales tipo productero_comprar_boton*/
